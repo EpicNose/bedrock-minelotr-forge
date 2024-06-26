@@ -1,0 +1,16 @@
+{
+   "namespace" : "ui_minelotr_npcforge",
+   "screen(0)" : {
+      "controls" : [
+         {
+            "anvil_panel(0)@anvil.anvil_panel" : {
+               "layer" : 1
+            }
+         }
+      ],
+      "type" : "screen"
+   },
+   "screen@common.base_screen" : {
+      "$screen_content" : "netease_editor_template_namespace.netease_editor_root_panel"
+   }
+}

@@ -1,0 +1,69 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "a.defend.mainhand": "animation.minelotr.defendwithshield.mainhand",
+                "a.defend.vicehand": "animation.minelotr.defendwithshield.vicehand",
+                "c.defend.mainhand": "controller.animation.defendwithshield.mainhand",
+                "c.defend.vicehand": "controller.animation.defendwithshield.vicehand",
+                "c.walk": "controller.animation.lotrhuman.walk",
+                "c.walk.c": "controller.animation.lotrhuman.walk.c",
+                "c.walk.uis": "controller.animation.lotrhuman.walk.uis",
+                "walk": "animation.lotrhuman.walk",
+                "walk.b": "animation.lotrhuman.walk.b",
+                "walk.c": "animation.lotrhuman.walk.c",
+                "walk.l": "animation.lotrhuman.walk.l",
+                "walk.uis": "animation.lotrhuman.walk.uis"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "default": "geometry.dwarf"
+            },
+            "identifier": "minelotr:entity",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.dwarf"
+            ],
+            "scripts": {
+                "animate": [
+                    "c.walk",
+                    "c.walk.c",
+                    "c.walk.uis",
+                    "c.defend.mainhand",
+                    "c.defend.vicehand",
+                    "a.sword.q.b",
+                    "a.sword.z.b",
+                    "a.sword.q.l",
+                    "a.sword.z.l"
+                ],
+                "initialize": [
+                    "variable.is_holding_right = 0.0;",
+                    "variable.is_blinking = 0.0;",
+                    "variable.last_blink_time = 0.0;",
+                    "variable.hand_bob = 0.0;"
+                ],
+                "pre_animation": [
+                    "variable.walk_npa = query.is_on_screen && !query.is_sleeping  && !query.is_sprinting && !query.is_sneaking && !query.is_in_water && !query.is_riding && !query.is_gliding && !query.item_is_charged && !query.is_using_item && query.is_on_ground && query.modified_move_speed > 0.1;",
+                    "variable.walk_c_npa = query.is_on_screen && !query.is_sleeping  && !query.is_sprinting && !query.is_sneaking && !query.is_in_water && !query.is_riding && !query.is_gliding && query.item_is_charged && !query.is_using_item && query.is_on_ground && query.modified_move_speed > 0.1;",
+                    "variable.walk_use_items_npa = query.is_on_screen && !query.is_sleeping  && !query.is_sprinting && !query.is_in_water && !query.is_riding && !query.is_gliding && !query.item_is_charged && query.is_using_item && query.is_on_ground && query.modified_move_speed > 0.1;",
+                    "variable.bow = query.get_equipped_item_name == 'bow';",
+                    "variable.shield_main = query.get_equipped_item_name == 'shield';",
+                    "variable.attack = Math.sin(variable.attack_time * 90.0);",
+                    "variable.sword_q =  query.get_equipped_item_name== 'galadhrim_sword' || query.get_equipped_item_name == 'wooden_sword' || query.get_equipped_item_name == 'stone_sword' || query.get_equipped_item_name == 'iron_sword' ;",
+                    "variable.sword_all =    query.get_equipped_item_name== 'galadhrim_sword' || query.get_equipped_item_name == 'wooden_sword' || query.get_equipped_item_name == 'stone_sword' || query.get_equipped_item_name == 'iron_sword' || query.get_equipped_item_name == 'golden_sword' || query.get_equipped_item_name == 'diamond_sword' || query.get_equipped_item_name == 'netherite_sword';",
+                    "variable.sword_z =  query.get_equipped_item_name== 'galadhrim_sword' || query.get_equipped_item_name == 'golden_sword' || query.get_equipped_item_name == 'diamond_sword' || query.get_equipped_item_name == 'netherite_sword';",
+                    "variable.sword_z1 = query.get_equipped_item_name== 'galadhrim_sword' || query.get_equipped_item_name == 'golden_sword';",
+                    "variable.sword_z2 = query.get_equipped_item_name== 'galadhrim_sword' || query.get_equipped_item_name == 'diamond_sword' || query.get_equipped_item_name == 'netherite_sword';",
+                    "variable.fr =  query.is_riding || query.is_sleeping;"
+                ]
+            },
+            "textures": {
+                "dwarfcraftsman0": "textures/entity/DURINS_FOLK/addanviltexture",
+                "dwarfcraftsman1": "textures/entity/DURINS_FOLK/noanviltexture"
+            }
+        }
+    }
+}

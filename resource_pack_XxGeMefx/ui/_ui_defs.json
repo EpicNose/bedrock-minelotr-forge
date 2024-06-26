@@ -1,0 +1,8 @@
+{
+    "ui_defs": [
+        "ui/neteaseCommonUI.json",
+        "ui/ui_minelotr_forge1.json",
+        "ui/ui_minelotr_npcforge.json",
+        "ui/netease_editor_template_namespace.json"
+    ]
+}

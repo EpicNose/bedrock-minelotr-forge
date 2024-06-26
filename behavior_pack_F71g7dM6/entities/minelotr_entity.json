@@ -1,0 +1,395 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "minelotr:attackmode0": {
+                "minecraft:damage_sensor": {
+                    "triggers": [
+                        {
+                            "on_damage": {
+                                "event": "minelotr:switchattackdefendmode",
+                                "filters": {
+                                    "all_of": [
+                                        {
+                                            "operator": "==",
+                                            "subject": "self",
+                                            "test": "is_mark_variant",
+                                            "value": 0
+                                        }
+                                    ],
+                                    "any_of": [
+                                        {
+                                            "operator": "equals",
+                                            "subject": "self",
+                                            "test": "has_damage",
+                                            "value": "attack"
+                                        },
+                                        {
+                                            "operator": "equals",
+                                            "subject": "self",
+                                            "test": "has_damage",
+                                            "value": "projectile"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "minecraft:variant": {
+                    "value": 0
+                }
+            },
+            "minelotr:attackmode1": {
+                "minecraft:behavior.send_event": {
+                    "event_choices": [
+                        {
+                            "cast_duration": 0.0,
+                            "cooldown_time": 5.0,
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "operator": "equals",
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "minelotr:entity"
+                                    },
+                                    {
+                                        "operator": "==",
+                                        "subject": "other",
+                                        "test": "is_mark_variant",
+                                        "value": 0
+                                    }
+                                ]
+                            },
+                            "max_activation_range": 16.0,
+                            "min_activation_range": 0.0,
+                            "particle_color": "#FFB38033",
+                            "sequence": [
+                                {
+                                    "base_delay": 0.0,
+                                    "event": "minelotr:mustdefend",
+                                    "sound_event": "prepare.wololo"
+                                }
+                            ],
+                            "start_sound_event": "cast.spell",
+                            "weight": 3
+                        }
+                    ],
+                    "priority": 3
+                },
+                "minecraft:variant": {
+                    "value": 1
+                }
+            },
+            "minelotr:color_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "minelotr:color_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "minelotr:color_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                }
+            },
+            "minelotr:startdefend": {
+                "minecraft:damage_sensor": {
+                    "triggers": [
+                        {
+                            "deals_damage": false,
+                            "on_damage": {
+                                "event": "minelotr:disabledefend",
+                                "filters": {
+                                    "all_of": [
+                                        {
+                                            "operator": "==",
+                                            "subject": "self",
+                                            "test": "is_mark_variant",
+                                            "value": 10
+                                        }
+                                    ],
+                                    "any_of": [
+                                        {
+                                            "operator": "equals",
+                                            "subject": "self",
+                                            "test": "has_damage",
+                                            "value": "attack"
+                                        },
+                                        {
+                                            "operator": "equals",
+                                            "subject": "self",
+                                            "test": "has_damage",
+                                            "value": "projectile"
+                                        }
+                                    ]
+                                }
+                            },
+                            "on_damage_sound_event": "mob.enderdragon.death"
+                        },
+                        {
+                            "cause": "all",
+                            "deals_damage": false
+                        }
+                    ]
+                },
+                "minecraft:scale": {
+                    "value": 2.0
+                },
+                "minecraft:timer": {
+                    "looping": false,
+                    "randomInterval": true,
+                    "time": [
+                        1.5,
+                        4.0
+                    ],
+                    "time_down_event": {
+                        "event": "minelotr:disabledefend"
+                    }
+                }
+            }
+        },
+        "components": {
+            "minecraft:annotation.open_door": {
+
+            },
+            "minecraft:attack": {
+                "damage": 2
+            },
+            "minecraft:behavior.door_interact": {
+
+            },
+            "minecraft:behavior.float": {
+
+            },
+            "minecraft:behavior.look_at_target": {
+                "priority": 1
+            },
+            "minecraft:behavior.melee_attack": {
+                "reach_multiplier": 2.0,
+                "track_target": true
+            },
+            "minecraft:behavior.move_to_random_block": {
+
+            },
+            "minecraft:behavior.move_towards_target": {
+
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "entity_types": [
+                    {
+                        "filters": {
+                            "subject": "other",
+                            "test": "is_family",
+                            "value": "pig"
+                        },
+                        "max_dist": 16
+                    },
+                    {
+                        "filters": {
+                            "subject": "other",
+                            "test": "is_family",
+                            "value": "monster"
+                        },
+                        "max_dist": 16
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "subject": "other",
+                                    "test": "is_family",
+                                    "value": "player"
+                                },
+                                {
+                                    "operator": "!=",
+                                    "subject": "other",
+                                    "test": "is_family",
+                                    "value": "mongolia"
+                                }
+                            ]
+                        },
+                        "max_dist": 16
+                    }
+                ],
+                "must_see": true,
+                "priority": 2
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 2,
+                "speed_multiplier": 1
+            },
+            "minecraft:can_climb": {
+
+            },
+            "minecraft:collision_box": {
+                "height": 1.7,
+                "width": 1.0
+            },
+            "minecraft:equip_item": {
+
+            },
+            "minecraft:equipment": {
+                "table": "loot_tables/entities/dwarf_equipment.json"
+            },
+            "minecraft:health": {
+                "max": 999,
+                "value": 999
+            },
+            "minecraft:interact": {
+                "hurt_item": 0,
+                "interact_text": "啊哈哈哈哈哈哈哈",
+                "on_interact": "",
+                "particle_on_start": {
+
+                },
+                "play_sounds": "",
+                "spawn_items": {
+                    "table": "loot_tables/entities/dwarf_equipment.json"
+                }
+            },
+            "minecraft:jump.static": {
+                "jump_power": 0.42
+            },
+            "minecraft:movement": {
+                "value": 0.3
+            },
+            "minecraft:movement.basic": {
+
+            },
+            "minecraft:navigation.walk": {
+                "avoid_sun": false,
+                "avoid_water": true,
+                "can_open_doors": true,
+                "can_pass_doors": true,
+                "is_amphibious": true
+            },
+            "minecraft:on_hurt_by_player": {
+                "event": "minelotr:switchattackdefendmode",
+                "target": "self"
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
+            "minecraft:sittable": {
+
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "minelotr:entity"
+                ]
+            }
+        },
+        "description": {
+            "identifier": "minelotr:entity",
+            "is_experimental": false,
+            "is_spawnable": true
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "sequence": [
+                    {
+                        "randomize": [
+                            {
+                                "add": {
+                                    "component_groups": [
+                                        "minelotr:color_0",
+                                        "minelotr:attackmode0"
+                                    ]
+                                },
+                                "weight": 1
+                            },
+                            {
+                                "add": {
+                                    "component_groups": [
+                                        "minelotr:color_1",
+                                        "minelotr:attackmode0"
+                                    ]
+                                },
+                                "weight": 1
+                            },
+                            {
+                                "add": {
+                                    "component_groups": [
+                                        "minelotr:color_2",
+                                        "minelotr:attackmode0"
+                                    ]
+                                },
+                                "weight": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            "minelotr:disabledefend": {
+                "add": {
+                    "component_groups": [
+                        "minelotr:attackmode0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "minelotr:attackmode1",
+                        "minelotr:startdefend"
+                    ]
+                }
+            },
+            "minelotr:mustdefend": {
+                "add": {
+                    "component_groups": [
+                        "minelotr:attackmode1",
+                        "minelotr:startdefend"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "minelotr:attackmode0"
+                    ]
+                }
+            },
+            "minelotr:switchattackdefendmode": {
+                "sequence": [
+                    {
+                        "randomize": [
+                            {
+                                "add": {
+                                    "component_groups": [
+                                        "minelotr:attackmode0"
+                                    ]
+                                },
+                                "remove": {
+                                    "component_groups": [
+                                        "minelotr:attackmode1",
+                                        "minelotr:startdefend"
+                                    ]
+                                },
+                                "weight": 1
+                            },
+                            {
+                                "add": {
+                                    "component_groups": [
+                                        "minelotr:attackmode1",
+                                        "minelotr:startdefend"
+                                    ]
+                                },
+                                "remove": {
+                                    "component_groups": [
+                                        "minelotr:attackmode0"
+                                    ]
+                                },
+                                "weight": 100
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

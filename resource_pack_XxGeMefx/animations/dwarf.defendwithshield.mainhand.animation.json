@@ -1,0 +1,115 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.minelotr.defendwithshield.mainhand": {
+			"loop": "hold_on_last_frame",
+			"override_previous_animation": true,
+			"animation_length": 0.75,
+			"bones": {
+				"RightArmUp": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-80, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, -0.8, -4]
+					}
+				},
+				"RightArmDown": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, -77.5]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [-2, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.25": [1, 1.2, 1]
+					}
+				},
+				"LeftArmUp": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [17.5, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, -0.5, 0.4]
+					}
+				},
+				"LeftArmDown": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-27.5, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.minelotr.defendwithshield.vicehand": {
+			"loop": "hold_on_last_frame",
+			"override_previous_animation": true,
+			"animation_length": 0.75,
+			"bones": {
+				"RightArmUp": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [17.5, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.25": [1, 1, 1]
+					}
+				},
+				"RightArmDown": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-27.5, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, 0]
+					}
+				},
+				"LeftArmUp": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-80, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0.8, -4]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.25": [1, 1, 1]
+					}
+				},
+				"LeftArmDown": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, 77.5]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [2, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.25": [1, 1.2, 1]
+					}
+				}
+			}
+		}
+	}
+}

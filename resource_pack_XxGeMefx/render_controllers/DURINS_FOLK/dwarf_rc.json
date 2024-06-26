@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.dwarf": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [ 
+            "Texture.dwarfcraftsman1",
+            "Texture.dwarfcraftsman0"
+          ]
+        }
+      },
+      "geometry": "geometry.default",
+      "materials": [ 
+        { "*": "Material.default" }
+      ],
+      "textures": [
+          "Array.skins[query.skin_id]"
+      ]
+    }
+  }
+}

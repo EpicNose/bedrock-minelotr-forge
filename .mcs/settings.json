@@ -1,0 +1,18 @@
+{
+    "Arena.Component.Namespace": "minelotr",
+    "FirstTabSetting": 1,
+    "ShortItemSettings": [
+        "resource_pack_XxGeMefx\\ui",
+        "behavior_pack_F71g7dM6\\Presets",
+        "behavior_pack_F71g7dM6\\Parts",
+        "behavior_pack_F71g7dM6\\BoxData",
+        "resource_pack_XxGeMefx\\effects",
+        "resource_pack_XxGeMefx\\models",
+        "resource_pack_XxGeMefx\\textures"
+    ],
+    "Uluru.autoLayerDict": {
+        "ui_minelotr_forge1": true,
+        "ui_minelotr_npcforge": true
+    },
+    "Uluru.checkSuspectOldUI": true
+}

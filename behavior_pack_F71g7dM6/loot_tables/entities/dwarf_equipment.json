@@ -1,0 +1,49 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "minecraft:shield",
+                    "type": "item"
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "entries": [
+                {
+                    "name": "minelotr:dwarf_helmet",
+                    "type": "item"
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "entries": [
+                {
+                    "name": "minelotr:dwarf_chestplate",
+                    "type": "item"
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "entries": [
+                {
+                    "name": "minelotr:dwarf_leggings",
+                    "type": "item"
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "entries": [
+                {
+                    "name": "minelotr:dwarf_boots",
+                    "type": "item"
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

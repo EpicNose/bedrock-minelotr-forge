@@ -1,0 +1,179 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.lotr.armor.helmet",
+				"texture_width": 64,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "kroot",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "kroot",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "kbody",
+					"parent": "waist",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "head",
+					"parent": "kbody",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{
+							"origin": [-4, 24, -4],
+							"size": [8, 8, 8],
+							"inflate": 0.5,
+							"uv": {
+								"north": {"uv": [8, 8], "uv_size": [8, 8]},
+								"east": {"uv": [0, 8], "uv_size": [8, 8]},
+								"south": {"uv": [24, 8], "uv_size": [8, 8]},
+								"west": {"uv": [16, 8], "uv_size": [8, 8]},
+								"up": {"uv": [8, 0], "uv_size": [8, 8]},
+								"down": {"uv": [16, 8], "uv_size": [8, -8]}
+							}
+						}
+					]
+				},
+				{
+					"name": "hat",
+					"parent": "head",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "cape",
+					"parent": "kbody",
+					"pivot": [0, 24, 3]
+				},
+				{
+					"name": "LeftArmFake",
+					"parent": "kbody",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "LeftArmUp",
+					"parent": "LeftArmFake",
+					"pivot": [4.5, 22, 0]
+				},
+				{
+					"name": "LeftArmDown",
+					"parent": "LeftArmUp",
+					"pivot": [6, 17, 2]
+				},
+				{
+					"name": "LeftItem",
+					"parent": "LeftArmDown",
+					"pivot": [6, 15, 1]
+				},
+				{
+					"name": "LeftSleeveUp",
+					"parent": "LeftArmFake",
+					"pivot": [4, 22, 0]
+				},
+				{
+					"name": "LeftSleeveDown",
+					"parent": "LeftSleeveUp",
+					"pivot": [5, 17, 2]
+				},
+				{
+					"name": "RightArmFake",
+					"parent": "kbody",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "RightArmUp",
+					"parent": "RightArmFake",
+					"pivot": [-4.5, 22, 0]
+				},
+				{
+					"name": "RightArmDown",
+					"parent": "RightArmUp",
+					"pivot": [-6, 17, 2]
+				},
+				{
+					"name": "RightItem",
+					"parent": "RightArmDown",
+					"pivot": [-6, 15, 1],
+					"locators": {
+						"lead_hold": [-6, 15, 1]
+					}
+				},
+				{
+					"name": "RightSleeveUp",
+					"parent": "RightArmFake",
+					"pivot": [-4, 22, 0]
+				},
+				{
+					"name": "RightSleeveDown",
+					"parent": "RightSleeveUp",
+					"pivot": [-5, 17, 2]
+				},
+				{
+					"name": "jacket",
+					"parent": "kbody",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "LeftLeg",
+					"parent": "kroot",
+					"pivot": [1.9, 12, 0]
+				},
+				{
+					"name": "LeftLegUp",
+					"parent": "LeftLeg",
+					"pivot": [1.9, 12, 0]
+				},
+				{
+					"name": "LeftLegDown",
+					"parent": "LeftLegUp",
+					"pivot": [1.9, 7, -2.2]
+				},
+				{
+					"name": "LeftPantsUp",
+					"parent": "LeftLeg",
+					"pivot": [-0.1, 12, 0]
+				},
+				{
+					"name": "LeftPantsDown",
+					"parent": "LeftPantsUp",
+					"pivot": [-0.1, 5, -3]
+				},
+				{
+					"name": "RightLeg",
+					"parent": "kroot",
+					"pivot": [-1.9, 12, 0]
+				},
+				{
+					"name": "RightLegUp",
+					"parent": "RightLeg",
+					"pivot": [-1.9, 12, 0]
+				},
+				{
+					"name": "RightLegDown",
+					"parent": "RightLegUp",
+					"pivot": [-1.9, 7, -2.2]
+				},
+				{
+					"name": "RightPantsUp",
+					"parent": "RightLeg",
+					"pivot": [0.1, 12, 0]
+				},
+				{
+					"name": "RightPantsDown",
+					"parent": "RightPantsUp",
+					"pivot": [0.1, 5, -2]
+				}
+			]
+		}
+	]
+}

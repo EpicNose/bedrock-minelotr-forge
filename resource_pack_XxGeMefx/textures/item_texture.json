@@ -1,0 +1,18 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "minelotr:dwarf_boots": {
+            "textures": "textures/items/armor/dwarf/dwarven_boots"
+        },
+        "minelotr:dwarf_chestplate": {
+            "textures": "textures/items/armor/dwarf/dwarven_chestplate"
+        },
+        "minelotr:dwarf_helmet": {
+            "textures": "textures/items/armor/dwarf/dwarven_helmet"
+        },
+        "minelotr:dwarf_leggings": {
+            "textures": "textures/items/armor/dwarf/dwarven_leggings"
+        }
+    },
+    "texture_name": "atlas.items"
+}

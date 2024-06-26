@@ -1,0 +1,6 @@
+entity.minelotr:entity.name=都林矮人
+item.spawn_egg.entity.minelotr:entity.name=都林矮人生物蛋
+item.minelotr:dwarf_helmet.name=矮人头盔
+item.minelotr:dwarf_chestplate.name=矮人胸甲
+item.minelotr:dwarf_leggings.name=矮人护腿
+item.minelotr:dwarf_boots.name=矮人战靴

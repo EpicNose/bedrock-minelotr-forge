@@ -1,0 +1,53 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+        "controller.animation.defendwithshield.mainhand": {
+            "states": {
+				"default": {
+					"blend_transition": 0.1,
+					"transitions": [
+						{
+							"1" : "query.variant==8 &&  query.is_on_screen"
+						}
+					]
+				},
+                "1":{
+                    "animations": [
+						"a.defend.mainhand"
+                    ],
+                    "blend_transition": 0.1,
+                    "transitions": [
+						{
+							"default" : "query.variant==9  &&  query.is_on_screen"
+						}
+					]
+					
+                }
+            }
+        },
+		"controller.animation.defendwithshield.vicehand": {
+            "states": {
+				"default": {
+					"blend_transition": 0.1,
+					"transitions": [
+						{
+							"1" : "query.variant==1 &&  query.is_on_screen"
+						}
+					]
+				},
+                "1":{
+                    "animations": [
+						"a.defend.vicehand"
+                    ],
+                    "blend_transition": 0.1,
+                    "transitions": [
+						{
+							"default" : "query.variant==0 &&  query.is_on_screen"
+						}
+					]
+					
+                }
+            }
+        }
+    }
+}

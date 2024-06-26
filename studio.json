@@ -1,0 +1,53 @@
+{
+    "Account": "x1105915229@163.com",
+    "AssertCacheDir": "E:\\MCStudioDownload\\EngineAssert",
+    "BlockNums": [
+        0,
+        0
+    ],
+    "BornPoint": [
+        0,
+        0,
+        0
+    ],
+    "CanPublishResourceComponent": true,
+    "CodeEnable": false,
+    "CreateNew": true,
+    "CreateVersion": "2.10.0.561375",
+    "DCWebUrl": "https://x19apigatewayexpr.nie.netease.com",
+    "EditAddOnPaths": [
+
+    ],
+    "EditLogFilePath": "E:\\MCStudioDownload\\work\\editor\\edit.log",
+    "EditMaterialPaths": [
+
+    ],
+    "EditName": "矮人锻造师V5.2",
+    "EditType": 4,
+    "EditVersion": "2.12.0.699905",
+    "EditorResourcePackPath": "E:\\Program Files (x86)\\Netease\\MCStudio\\data\\inner_res",
+    "ElkUrl": "https://x19mclexpr.nie.netease.com/client-log",
+    "GameType": 1,
+    "Id": "722875303a0e452dbfecd510103164cb",
+    "IsMap": false,
+    "NewEditCount": 94,
+    "OldComponents": [
+
+    ],
+    "OldEditCount": 0,
+    "ResourceIds": [
+
+    ],
+    "SaveBackAddOnPath": "E:\\MCStudioDownload\\work\\x1105915229@163.com\\Cpp\\AddOn\\722875303a0e452dbfecd510103164cb",
+    "SaveBackMapPath": null,
+    "Seed": "",
+    "ServerName": "EXPR",
+    "ShowGpuDriverTips": false,
+    "ShowGuide": false,
+    "Source": "空白附加包",
+    "StudioPort": 10706,
+    "StudioTempPath": "E:\\MCStudioDownload\\temp\\editorTemp",
+    "UserId": "50065",
+    "UserName": "EpicNose",
+    "WorldType": 1
+}

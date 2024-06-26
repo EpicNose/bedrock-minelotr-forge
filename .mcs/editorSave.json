@@ -1,0 +1,73 @@
+{
+    "Addon": {
+        "EnchantSetting": {
+            "amplifier": 1
+        },
+        "PackResourceSortData": {
+            "1_minelotr:entity": {
+                "createTime": 1705857746.7505653,
+                "modifyTime": 1717777489.1125505
+            },
+            "2_minelotr:dwarf_boots": {
+                "createTime": 1706885646.9999776,
+                "modifyTime": 1706885791.5394447
+            },
+            "2_minelotr:dwarf_chestplate": {
+                "createTime": 1706882688.9526854,
+                "modifyTime": 1706882931.5951169
+            },
+            "2_minelotr:dwarf_helmet": {
+                "createTime": 1706880537.2451785,
+                "modifyTime": 1706882077.380544
+            },
+            "2_minelotr:dwarf_leggings": {
+                "createTime": 1706885368.4032233,
+                "modifyTime": 1706885463.1647668
+            },
+            "32_dwarf_equipment": {
+                "createTime": 1706887850.9181666,
+                "modifyTime": 1706887850.9181666
+            },
+            "32_entities/dwarf_equipment": {
+                "createTime": 1706891556.425128,
+                "modifyTime": 1706891556.425128
+            }
+        },
+        "PlayerEffectSetting": {
+            "amplifier": 1,
+            "duration": 10
+        },
+        "PresetInstanceTreeData": [
+
+        ]
+    },
+    "UI": {
+        "customPrefabGroupExpand": [
+
+        ],
+        "expandData": {
+            "prefab": {
+
+            },
+            "screen": {
+                "E:\\MCStudioDownload\\work\\x1105915229@163.com\\Cpp\\AddOn\\722875303a0e452dbfecd510103164cb\\resource_pack_XxGeMefx\\ui\\ui_minelotr_forge1.json": [
+                    "/main",
+                    "/main/bottom_panel",
+                    "/main/bottom_panel/inv_panel",
+                    "/main/bottom_panel/inv_panel/panel",
+                    "/main/bottom_panel/inv_panel/panel/inventory_panel_bottom_half_with_label",
+                    "/main/bottom_panel/inv_panel/panel/inventory_panel_bottom_half_with_label/inventory_panel",
+                    "/main/bottom_panel/image",
+                    "/main/bottom_panel/top_half_panel",
+                    "/main/bottom_panel/top_half_panel/netease_popup_name_failed_panel",
+                    "/main/bottom_panel/top_half_panel/edit_box/centering_panel",
+                    "/main/bottom_panel/top_half_panel/edit_box/centering_panel/clipper_panel",
+                    "/main/bottom_panel/top_half_panel/edit_box/centering_panel/clipper_panel/visibility_panel"
+                ],
+                "E:\\MCStudioDownload\\work\\x1105915229@163.com\\Cpp\\AddOn\\722875303a0e452dbfecd510103164cb\\resource_pack_XxGeMefx\\ui\\ui_minelotr_npcforge.json": [
+
+                ]
+            }
+        }
+    }
+}

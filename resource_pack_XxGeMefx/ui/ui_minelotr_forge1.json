@@ -1,0 +1,181 @@
+{
+   "main" : {
+      "controls" : [
+         {
+            "bottom_panel" : {
+               "controls" : [
+                  {
+                     "bottom_image" : {
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "grayscale" : true,
+                        "layer" : 1,
+                        "texture" : "textures/ui/anvil/minelotr_anvil",
+                        "type" : "image"
+                     }
+                  },
+                  {
+                     "container_gamepad_helpers@common.container_gamepad_helpers" : {
+                        "layer" : 2
+                     }
+                  },
+                  {
+                     "inv_panel" : {
+                        "anchor_from" : "top_middle",
+                        "anchor_to" : "top_middle",
+                        "controls" : [
+                           {
+                              "panel" : {
+                                 "controls" : [
+                                    {
+                                       "inventory_panel_bottom_half_with_label@common.inventory_panel_bottom_half_with_label" : {
+                                          "layer" : 1
+                                       }
+                                    },
+                                    {
+                                       "hotbar_grid@common.hotbar_grid_template" : {
+                                          "layer" : 4,
+                                          "offset" : [ 0.0, -1.0 ]
+                                       }
+                                    },
+                                    {
+                                       "inventory_selected_icon_button@common.inventory_selected_icon_button" : {
+                                          "layer" : 5
+                                       }
+                                    }
+                                 ],
+                                 "layer" : 1,
+                                 "offset" : [ 37.0, -1.50 ],
+                                 "priority" : 2,
+                                 "size" : [ 174, 95 ],
+                                 "type" : "panel"
+                              }
+                           }
+                        ],
+                        "layer" : 403,
+                        "offset" : [ -0.50, 97.50 ],
+                        "size" : [ 173, 95 ],
+                        "type" : "stack_panel"
+                     }
+                  },
+                  {
+                     "image" : {
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "controls" : [],
+                        "layer" : 1192,
+                        "offset" : [ -381.0, -209.0 ],
+                        "size" : [ 100, 100 ],
+                        "texture" : "textures/ui/recipe_book_touch_cell_selected",
+                        "type" : "image",
+                        "visible" : false
+                     }
+                  },
+                  {
+                     "top_half_panel" : {
+                        "controls" : [
+                           {
+                              "top_inv_panel" : {
+                                 "controls" : [
+                                    {
+                                       "minelotrforgeSlot3@neteaseCommonUI.itemBtn" : {
+                                          "$item_button_layer" : 10,
+                                          "$item_button_offset" : [ 54.50, 15.50 ],
+                                          "$item_button_size" : [ 16, 16 ],
+                                          "layer" : 1
+                                       }
+                                    },
+                                    {
+                                       "minelotrforgeSlot2@neteaseCommonUI.itemBtn" : {
+                                          "$item_button_layer" : 10,
+                                          "$item_button_offset" : [ -3.50, 27.50 ],
+                                          "$item_button_size" : [ 16, 16 ],
+                                          "layer" : 61
+                                       }
+                                    },
+                                    {
+                                       "minelotrforgeSlot1@neteaseCommonUI.itemBtn" : {
+                                          "$item_button_layer" : 10,
+                                          "$item_button_offset" : [ -3.50, 4.50 ],
+                                          "$item_button_size" : [ 16, 16 ],
+                                          "layer" : 121
+                                       }
+                                    },
+                                    {
+                                       "minelotrforgeSlot0@neteaseCommonUI.itemBtn" : {
+                                          "$item_button_layer" : 10,
+                                          "$item_button_offset" : [ -52.50, 15.50 ],
+                                          "$item_button_size" : [ 16, 16 ],
+                                          "layer" : 181
+                                       }
+                                    }
+                                 ],
+                                 "layer" : 1,
+                                 "size" : [ 100, 100 ],
+                                 "type" : "panel"
+                              }
+                           },
+                           {
+                              "netease_popup_name_failed_panel@anvil.netease_popup_name_failed_panel" : {
+                                 "layer" : 242
+                              }
+                           },
+                           {
+                              "label" : {
+                                 "color" : [ 0.2980392156862745, 0.2980392156862745, 0.2980392156862745 ],
+                                 "font_type" : "default",
+                                 "layer" : 243,
+                                 "offset" : [ 0.0, 3.0 ],
+                                 "size" : [ 100, 100 ],
+                                 "text" : "工匠锻造界面",
+                                 "text_alignment" : "center",
+                                 "type" : "label"
+                              }
+                           },
+                           {
+                              "edit_box@common.text_edit_box" : {
+                                 "$edit_box_default_texture" : "textures/ui/edit_box_indent",
+                                 "$edit_box_hover_texture" : "textures/ui/edit_box_indent_hover",
+                                 "$font_scale_factor" : 1.0,
+                                 "$font_size" : "normal",
+                                 "$is_new_nine_slice" : false,
+                                 "$nine_slice_buttom" : 0,
+                                 "$nine_slice_left" : 0,
+                                 "$nine_slice_right" : 0,
+                                 "$nine_slice_top" : 0,
+                                 "$nineslice_size" : [ 0, 0, 0, 0 ],
+                                 "$place_holder_text" : "请输入内容",
+                                 "$place_holder_text_color" : [ 0.50, 0.50, 0.50 ],
+                                 "$text_background_default" : "netease_editor_template_namespace.edit_box_background_default",
+                                 "$text_background_hover" : "netease_editor_template_namespace.edit_box_background_hover",
+                                 "$text_box_name" : "%netease_editor_template_namespace.message",
+                                 "$text_box_text_color" : [ 1, 1, 1 ],
+                                 "$text_edit_box_content_binding_name" : "#netease_editor_template_namespace.message_content",
+                                 "$text_edit_box_label_anchor_point" : "right_middle",
+                                 "$text_edit_box_label_min_size" : [ "100%", 0 ],
+                                 "$text_edit_box_label_size" : [ "default", "default" ],
+                                 "layer" : 244,
+                                 "max_length" : 512,
+                                 "offset" : [ 26.50, -22.50 ],
+                                 "size" : [ 111, 16 ],
+                                 "type" : "edit_box"
+                              }
+                           }
+                        ],
+                        "layer" : 1193,
+                        "offset" : [ -0.50, -49.0 ],
+                        "size" : [ 173, 96 ],
+                        "type" : "panel"
+                     }
+                  }
+               ],
+               "layer" : 1,
+               "size" : [ 176.0, 197.0 ],
+               "type" : "panel"
+            }
+         }
+      ],
+      "type" : "screen"
+   },
+   "namespace" : "ui_minelotr_forge1"
+}
