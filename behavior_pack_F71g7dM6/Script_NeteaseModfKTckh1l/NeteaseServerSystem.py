@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+from mod_log import logger
 import mod.server.extraServerApi as serverApi
 ServerSystem = serverApi.GetServerSystemCls()
 
@@ -13,6 +13,8 @@ class NeteaseServerSystem(ServerSystem):
         """
         Driven by event, One tick way
         """
+
+
         pass
 
     # 这个Update函数是基类的方法，同样会在引擎tick的时候被调用，1秒30帧（被调用30次）
@@ -20,6 +22,7 @@ class NeteaseServerSystem(ServerSystem):
         """
         Driven by system manager, Two tick way
         """
+        print(1)
         pass
 
     def Destroy(self):
