@@ -30,7 +30,7 @@
     "GameType": 1,
     "Id": "45afdee412124694b776048307020374",
     "IsMap": false,
-    "NewEditCount": 98,
+    "NewEditCount": 99,
     "OldComponents": [
 
     ],
@@ -45,7 +45,7 @@
     "ShowGpuDriverTips": false,
     "ShowGuide": false,
     "Source": "import",
-    "StudioPort": 12940,
+    "StudioPort": 11965,
     "StudioTempPath": "E:\\MCStudioDownload\\temp\\editorTemp",
     "UserId": "50065",
     "UserName": "EpicNose",

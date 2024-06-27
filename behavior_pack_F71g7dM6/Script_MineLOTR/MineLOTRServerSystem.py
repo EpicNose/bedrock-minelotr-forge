@@ -42,9 +42,16 @@ class MineLOTRServerSystem(ServerSystem):
         print args
         # playercomp = serverApi.GetEngineCompFactory().
         entity = serverApi.GetEngineCompFactory().CreateEntityComponent(args["interactEntityId"])
+        comp = serverApi.GetEngineCompFactory().CreateEntityDefinitions(args["interactEntityId"])
+        result = comp.GetEntityDefinitions()
+        print result
+        if result.__contains__("+minelotr:entity"):
+            print "命中"
+
+
         # player = serverApi.GetEngineCompFactory().CreatePlayer(args["playerId"])
         # print player.GetPlayerHunger()
-        print entity.GetAllComponentsName()
+        # print entity.GetAllComponentsName()
         # entity.
         # obj = presetApi.GetGameObjectByEntityId(args["playerId"])
         # print obj
