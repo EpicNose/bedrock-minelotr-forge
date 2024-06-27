@@ -41,7 +41,7 @@ class MineLOTRServerSystem(ServerSystem):
         print "尝试输出参数"
         print args
         # playercomp = serverApi.GetEngineCompFactory().
-        entity = serverApi.GetEngineCompFactory().CreateEntityComponent(args["interactEntityId"])
+        # entity = serverApi.GetEngineCompFactory().CreateEntityComponent(args["interactEntityId"])
         comp = serverApi.GetEngineCompFactory().CreateEntityDefinitions(args["interactEntityId"])
         result = comp.GetEntityDefinitions()
         print result
