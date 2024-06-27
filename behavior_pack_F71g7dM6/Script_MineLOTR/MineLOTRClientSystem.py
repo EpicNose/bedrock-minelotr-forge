@@ -4,7 +4,7 @@ import mod.client.extraClientApi as clientApi
 ClientSystem = clientApi.GetClientSystemCls()
 
 
-class NeteaseClientSystem(ClientSystem):
+class MineLOTRClientSystem(ClientSystem):
     def __init__(self, namespace, systemName):
         ClientSystem.__init__(self, namespace, systemName)
 

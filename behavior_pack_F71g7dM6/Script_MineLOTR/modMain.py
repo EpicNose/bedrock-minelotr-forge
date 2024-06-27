@@ -3,30 +3,31 @@
 from mod.common.mod import Mod
 from mod_log import logger
 import mod.server.extraServerApi as serverApi
+import config
 
 
-
-@Mod.Binding(name="Script_NeteaseModfKTckh1l", version="0.0.1")
-class Script_NeteaseModfKTckh1l(object):
+@Mod.Binding(name="config.mod_name", version="0.0.1")
+class MineLOTRmod(object):
 
     def __init__(self):
         pass
 
     @Mod.InitServer()
-    def Script_NeteaseModfKTckh1lServerInit(self):
+    def MineLOTRServerInit(self):
         # print('hello')
         # serverApi.RegisterSystem("DemoTutorialMod", "Server","Script_DemoTutorialMod.DemoTutorialServerSystem.DemoTutorialServerSystem")
-        serverApi.RegisterSystem("Script_NeteaseModfKTckh1l","Server","Script_NeteaseModfKTckh1l.NeteaseServerSystem.NeteaseServerSystem")
+        # serverApi.RegisterSystem("MineLOTR","Server","Script_MineLOTR.MineLOTRServerSystem.MineLOTRServerSystem")
+        serverApi.RegisterSystem(config.mod_name, config.server_system_name, config.server_class_path)
         pass
 
     @Mod.DestroyServer()
-    def Script_NeteaseModfKTckh1lServerDestroy(self):
+    def MineLOTRServerDestroy(self):
         pass
 
     @Mod.InitClient()
-    def Script_NeteaseModfKTckh1lClientInit(self):
+    def MineLOTRClientInit(self):
         pass
 
     @Mod.DestroyClient()
-    def Script_NeteaseModfKTckh1lClientDestroy(self):
+    def MineLOTRClientDestroy(self):
         pass

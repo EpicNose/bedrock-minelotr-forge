@@ -4,7 +4,7 @@ import mod.server.extraServerApi as serverApi
 ServerSystem = serverApi.GetServerSystemCls()
 
 
-class NeteaseServerSystem(ServerSystem):
+class MineLOTRServerSystem(ServerSystem):
     def __init__(self, namespace, systemName):
         ServerSystem.__init__(self, namespace, systemName)
 
