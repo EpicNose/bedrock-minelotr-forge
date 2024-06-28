@@ -46,6 +46,7 @@ class MineLOTRServerSystem(ServerSystem):
         result = comp.GetEntityDefinitions()
         print result
         if result.__contains__("+minelotr:entity"):
+            self.NotifyToClient(args["playerId"],'PlayerInteractWithCraftsman',args)
             print "命中"
 
 
