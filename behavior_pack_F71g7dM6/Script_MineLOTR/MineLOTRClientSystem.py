@@ -35,5 +35,5 @@ class MineLOTRClientSystem(ClientSystem):
         print "注册执行完成注册执行完成注册执行完成注册执行完成注册执行完成注册执行完成注册执行完成注册执行完成注册执行完成"
 
     def PlayerInteractWithCraftsman(self,data):
-
+        clientApi.PushScreen('ui_minelotr_forge1', 'minelotr_forge', {})
         print "客户端已收到"

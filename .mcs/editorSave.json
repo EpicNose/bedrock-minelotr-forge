@@ -66,6 +66,19 @@
                 ],
                 "E:\\MCStudioDownload\\work\\x1105915229@163.com\\Cpp\\AddOn\\722875303a0e452dbfecd510103164cb\\resource_pack_XxGeMefx\\ui\\ui_minelotr_npcforge.json": [
 
+                ],
+                "E:\\PythonCode\\bedrock-minelotr-forge-modsdktest\\bedrock-minelotr-forgeUI\\resource_pack_XxGeMefx\\ui\\ui_minelotr_forge1.json": [
+                    "/main",
+                    "/main/bottom_panel",
+                    "/main/bottom_panel/inv_panel",
+                    "/main/bottom_panel/inv_panel/panel",
+                    "/main/bottom_panel/inv_panel/panel/inventory_panel_bottom_half_with_label",
+                    "/main/bottom_panel/inv_panel/panel/inventory_panel_bottom_half_with_label/inventory_panel",
+                    "/main/bottom_panel/top_half_panel",
+                    "/main/bottom_panel/top_half_panel/netease_popup_name_failed_panel"
+                ],
+                "E:\\PythonCode\\bedrock-minelotr-forge-modsdktest\\bedrock-minelotr-forgeUI\\resource_pack_XxGeMefx\\ui\\ui_minelotr_npcforge.json": [
+
                 ]
             }
         }

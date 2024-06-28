@@ -23,14 +23,14 @@
 
     ],
     "EditName": "矮人锻造师V6.0",
-    "EditType": 2,
+    "EditType": 4,
     "EditVersion": "2.12.0.699905",
     "EditorResourcePackPath": "E:\\Program Files (x86)\\Netease\\MCStudio\\data\\inner_res",
     "ElkUrl": "https://x19mclexpr.nie.netease.com/client-log",
     "GameType": 1,
     "Id": "45afdee412124694b776048307020374",
     "IsMap": false,
-    "NewEditCount": 102,
+    "NewEditCount": 103,
     "OldComponents": [
 
     ],
@@ -45,7 +45,7 @@
     "ShowGpuDriverTips": false,
     "ShowGuide": false,
     "Source": "import",
-    "StudioPort": 11574,
+    "StudioPort": 12404,
     "StudioTempPath": "E:\\MCStudioDownload\\temp\\editorTemp",
     "UserId": "50065",
     "UserName": "EpicNose",
